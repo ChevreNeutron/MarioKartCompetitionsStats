@@ -1,6 +1,7 @@
 module.exports = {
     "env": {
         "browser": true,
+        "amd": true,
         "es6": true
     },
     "extends": [
@@ -9,7 +10,8 @@ module.exports = {
     ],
     "globals": {
         "Atomics": "readonly",
-        "SharedArrayBuffer": "readonly"
+        "SharedArrayBuffer": "readonly",
+        "process": true
     },
     "parserOptions": {
         "ecmaVersion": 2018,
