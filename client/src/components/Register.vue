@@ -1,34 +1,32 @@
 <template>
   <v-layout>
     <v-flex xs6 offset-xs3>
-      <div class="white elevation-2">
-        <v-toolbar flat dense class="red" dark>
-          <v-toolbar-title>Register</v-toolbar-title>
-        </v-toolbar>
-
-        <div class="pa-1000">
-          <input
-            type="email"
-            name="email"
+      <panel title="Register">
+        <form
+          name="tab-tracker-form"
+          autocomplete="off">
+          <v-text-field
+            label="Email"
             v-model="email"
-            placeholder="email">
+          ></v-text-field>
           <br>
-          <input
+          <v-text-field
+            label="Password"
             type="password"
-            name="password"
             v-model="password"
-            placeholder="password">
-          <br>
-          <div class="error" v-html="error"/>
-          <br>
-          <v-btn
-            dark
-            class="red"
-            @click="register">
-            Register
-          </v-btn>
-        </div>
-      </div>
+            autocomplete="new-password"
+          ></v-text-field>
+        </form>
+        <br>
+        <div class="danger-alert" v-html="error"/>
+        <br>
+        <v-btn
+          dark
+          class="red"
+          @click="register">
+          Register
+        </v-btn>
+      </panel>
     </v-flex>
   </v-layout>
 </template>

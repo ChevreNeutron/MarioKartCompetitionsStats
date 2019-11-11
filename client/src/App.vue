@@ -22,4 +22,8 @@ export default {
   margin-right: 150px;
   margin-left: 150px;
 }
+
+.v-btn__content {
+  color: white;
+}
 </style>
