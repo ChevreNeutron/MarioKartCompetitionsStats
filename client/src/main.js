@@ -7,7 +7,7 @@ import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 
 Vue.config.productionTip = false
-
+const vuetifyOptions = { }
 Vue.use(Vuetify)
 
 /* eslint-disable no-new */
@@ -15,5 +15,6 @@ new Vue({
   el: '#app',
   router,
   components: { App },
-  template: '<App/>'
+  template: '<App/>',
+  vuetify: new Vuetify(vuetifyOptions)
 })
