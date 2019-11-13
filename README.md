@@ -16,9 +16,9 @@ This is the list of all used tool used in this course :
 
 * [Express.js](https://expressjs.com/fr/)
 
-* [Vuetify]https://vuetifyjs.com)
+* [Vuetify](https://vuetifyjs.com)
 
-* [Visual Studio Code]https://code.visualstudio.com)
+* [Visual Studio Code](https://code.visualstudio.com)
 
 * [Discord](https://discordapp.com)
 
