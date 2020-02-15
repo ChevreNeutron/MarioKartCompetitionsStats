@@ -1,7 +1,6 @@
 <template>
   <v-layout>
     <v-flex xs6 offset-xs3>
-     <panel title="Login">
         <v-text-field
           label="Email"
           v-model="email"
@@ -17,17 +16,17 @@
         <br>
         <v-btn
           dark
-          class="cyan"
+          class="red"
           @click="login">
           Login
         </v-btn>
-      </panel>
     </v-flex>
   </v-layout>
 </template>
 
 <script>
 import AuthenticationService from '@/services/AuthenticationService'
+
 export default {
   data () {
     return {
