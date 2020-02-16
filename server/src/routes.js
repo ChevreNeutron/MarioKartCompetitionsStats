@@ -10,5 +10,3 @@ module.exports = (app) => {
     app.post('/login',
         AuthenticationController.login)
 }
-
-//22min30

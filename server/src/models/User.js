@@ -1,8 +1,9 @@
 const Promise = require('bluebird')
 const bcrypt = Promise.promisifyAll(require('bcrypt-nodejs'))
 
-function hashPassword (user) {
+function hashPassword (user, options) {
     const SALT_FACTOR = 8
+    console.log(options)
 
     if (!user.changed('password')) {
         return;
@@ -31,9 +32,12 @@ module.exports = (sequelize, DataTypes) => {
         }
     })
 
+    // CORRIGER LE PROBLEME DE COMPARAISON
     User.prototype.comparePassword = function (password) {
-        //return bcrypt.compareAsync(password, this.password)
         console.log(password)
+        console.log("###")
+        console.log(this.password)
+        //return bcrypt.compareAsync(password, this.password)
         return true
     }
 

@@ -13,7 +13,9 @@
         <v-spacer></v-spacer>
 
         <v-toolbar-items>
-        <v-btn class="red darken-2"
+        <v-btn 
+          v-if="!$store.state.isUserLoggedIn"
+          class="red darken-2"
           text
           dark>
           <router-link to="login">
@@ -21,7 +23,9 @@
           </router-link>
         </v-btn>
 
-        <v-btn class="red darken-2"
+        <v-btn 
+          v-if="!$store.state.isUserLoggedIn"
+          class="red darken-2"
           text
           dark>
           <router-link to="register">
