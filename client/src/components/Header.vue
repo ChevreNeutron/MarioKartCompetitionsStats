@@ -5,15 +5,24 @@
         <v-toolbar-title class="mr-4">
           <router-link to="root">
             <span class="home">
-              MarioKartCompetitonStats
+              Mario Kart Competiton Stats
             </span>
           </router-link>
+
+        <v-btn
+          class="red darken-2"
+          text
+          dark>
+          <router-link to="characters">
+          Characters
+          </router-link>
+        </v-btn>
         </v-toolbar-title>
 
         <v-spacer></v-spacer>
 
         <v-toolbar-items>
-        <v-btn 
+        <v-btn
           v-if="!$store.state.isUserLoggedIn"
           class="red darken-2"
           text
@@ -23,7 +32,7 @@
           </router-link>
         </v-btn>
 
-        <v-btn 
+        <v-btn
           v-if="!$store.state.isUserLoggedIn"
           class="red darken-2"
           text
