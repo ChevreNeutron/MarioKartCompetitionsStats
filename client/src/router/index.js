@@ -4,6 +4,8 @@ import HelloWorld from '@/components/HelloWorld'
 import Register from '@/components/Register'
 import Login from '@/components/Login'
 import Characters from '@/components/Characters'
+import Party from '@/components/Party'
+import CreateParty from '@/components/CreateParty'
 
 Vue.use(Router)
 
@@ -30,9 +32,14 @@ export default new Router({
       component: Characters
     },
     {
-      path: '/characters',
-      name: 'characters',
-      component: Characters
+      path: '/party',
+      name: 'party',
+      component: Party
+    },
+    {
+      path: '/party/create',
+      name: 'create-party',
+      component: CreateParty
     }
   ]
 })
