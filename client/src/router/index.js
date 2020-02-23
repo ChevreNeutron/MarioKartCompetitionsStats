@@ -28,6 +28,11 @@ export default new Router({
       path: '/characters',
       name: 'characters',
       component: Characters
+    },
+    {
+      path: '/characters',
+      name: 'characters',
+      component: Characters
     }
   ]
 })

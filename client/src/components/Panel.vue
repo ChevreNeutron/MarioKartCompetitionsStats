@@ -3,7 +3,6 @@
         <v-toolbar flat dense class="red" dark>
             <v-toolbar-title align="center" justify="center">{{title}}</v-toolbar-title>
         </v-toolbar>
-        
         <div>
             <slot>
                 No slot content defined.
@@ -15,9 +14,9 @@
 <script>
 
 export default {
-    props: [
-        'title'
-    ]
+  props: [
+    'title'
+  ]
 }
 </script>
 

@@ -12,6 +12,7 @@ app.use(cors())
 
 require('./routes')(app)
 
+// RETIRER LE "force: true" AVANT DEPLOIEMENT
 sequelize.sync({force: true})
   .then(() => {
     app.listen(config.port)

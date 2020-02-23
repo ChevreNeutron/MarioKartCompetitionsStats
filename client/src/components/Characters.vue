@@ -2,11 +2,10 @@
     <v-layout column>
         <v-flex>
             <panel title="Characters">
-                <div 
-                    v-for="character in characters" 
-                    :key="character.name">
+                <div v-for="character in characters"
+                :key="character.id">
                     {{character.name}}
-                    {{character.image}}
+                    {{character.characterImageUrl}}
                 </div>
             </panel>
         </v-flex>
@@ -15,21 +14,20 @@
 
 <script>
 
+import CharactersService from '@/services/CharactersService'
 import Panel from '@/components/Panel'
 export default {
-    components: {
-        Panel
-    },
-    data () {
-        return {
-            characters: [
-                {
-                    name: 'Mario',
-                    image: 'Test.jpeg'
-                }
-            ]
-        }
+  components: {
+    Panel
+  },
+  data () {
+    return {
+      characters: null
     }
+  },
+  async mounted () {
+    this.characters = (await CharactersService.getAllCharacters()).data
+  }
 }
 </script>
 
