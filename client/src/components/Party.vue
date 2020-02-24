@@ -9,7 +9,7 @@
                 <br><br>
 
                 <v-row align="center" justify="center">
-                    <v-img 
+                    <v-img
                         :src="character.characterImageUrl"
                         contain
                         aspect-ratio="1"
@@ -18,7 +18,7 @@
                 </v-row>
 
                 <br><br>
-                <button 
+                <button
                     dark
                     class="red"
                     @click="removeItem(index)">

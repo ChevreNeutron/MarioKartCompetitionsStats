@@ -1,0 +1,16 @@
+{
+    "name": "Mario",
+    "characterImageUrl": "https://vignette.wikia.nocookie.net/mario/images/a/a1/NSMBUDX-Mario-1.png/revision/latest/scale-to-width-down/326?cb=20190130012618&path-prefix=fr"
+}
+{
+    "name": "Luigi",
+    "characterImageUrl": "https://vignette.wikia.nocookie.net/mario/images/d/d1/NSMBUDX-Luigi.png/revision/latest/scale-to-width-down/290?cb=20190223013104&path-prefix=fr"
+}
+{
+    "name": "Bowser",
+    "characterImageUrl": "https://vignette.wikia.nocookie.net/mario/images/7/7e/Bowser_-_Mario_Party_10.png/revision/latest/scale-to-width-down/350?cb=20180403191653&path-prefix=fr"
+}
+{
+    "name": "Peach",
+    "characterImageUrl": "https://vignette.wikia.nocookie.net/mario/images/a/a1/Peach_Mario_Party_10.png/revision/latest/scale-to-width-down/267?cb=20181011194218&path-prefix=fr"
+}

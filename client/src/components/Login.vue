@@ -1,6 +1,6 @@
 <template>
   <v-layout>
-    <v-flex xs6 offset-xs3>
+    <v-flex title="Characters" xs6 offset-xs3>
         <v-text-field
           label="Email"
           v-model="email"
