@@ -1,14 +1,26 @@
 <template>
     <v-layout column>
-        <v-flex>
-            <panel title="Characters">
-                <div v-for="character in characters"
-                :key="character.id">
-                    {{character.name}}
-                    {{character.characterImageUrl}}
-                </div>
-            </panel>
-        </v-flex>
+        <v-row no-gutters>
+            <template title="Characters">
+                <v-col
+                v-for="(character, index) in characters"
+                :key="index"
+                class="font-weight-bold">
+                <br>
+                {{character.name}}
+                <br><br>
+
+                <v-row align="center" justify="center">
+                    <v-img
+                        :src="character.characterImageUrl"
+                        contain
+                        aspect-ratio="1"
+                        max-width="500"
+                        max-height="300"/>
+                </v-row>
+                </v-col>
+            </template>
+        </v-row>
     </v-layout>
 </template>
 
