@@ -3,11 +3,17 @@
       class="red darken-2"
       fixed>
         <v-toolbar-title class="mr-4">
+          <v-btn>
           <router-link to="root">
-            <span class="home">
-              Mario Kart Competiton Stats
-            </span>
+          <v-img
+          src="https://upload.wikimedia.org/wikipedia/fr/9/92/Mario_Kart_8_Deluxe_Logo.png"
+          contain
+          aspect-ratio="1"
+          max-width="200"
+          max-height="120"
+        ></v-img>
           </router-link>
+        </v-btn>  
 
         <v-btn
           class="red darken-2"
@@ -15,6 +21,15 @@
           dark>
           <router-link to="characters">
           Characters
+          </router-link>
+        </v-btn>      
+
+        <v-btn
+          class="red darken-2"
+          text
+          dark>
+          <router-link to="party">
+          Party
           </router-link>
         </v-btn>
         </v-toolbar-title>
