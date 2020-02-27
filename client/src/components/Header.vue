@@ -3,41 +3,38 @@
       class="red darken-2"
       fixed>
         <v-toolbar-title class="mr-4">
-          <v-btn>
+          <v-btn
+          class="red darken-2"
+          text
+          dark>
           <router-link to="root">
-          <v-img
-          src="https://upload.wikimedia.org/wikipedia/fr/9/92/Mario_Kart_8_Deluxe_Logo.png"
-          contain
-          aspect-ratio="1"
-          max-width="200"
-          max-height="120"
-        ></v-img>
+          Accueil
           </router-link>
-        </v-btn>  
+          </v-btn>  
 
-        <v-btn
+          <v-btn
           class="red darken-2"
           text
           dark>
           <router-link to="characters">
           Characters
           </router-link>
-        </v-btn>      
+          </v-btn>      
 
-        <v-btn
+          <v-btn
           class="red darken-2"
           text
           dark>
           <router-link to="party">
           Party
           </router-link>
-        </v-btn>
+          </v-btn>
         </v-toolbar-title>
 
         <v-spacer></v-spacer>
 
         <v-toolbar-items>
-        <v-btn
+          <v-btn
           v-if="!$store.state.isUserLoggedIn"
           class="red darken-2"
           text
@@ -45,9 +42,9 @@
           <router-link to="login">
           Login
           </router-link>
-        </v-btn>
+          </v-btn>
 
-        <v-btn
+          <v-btn
           v-if="!$store.state.isUserLoggedIn"
           class="red darken-2"
           text
@@ -55,16 +52,16 @@
           <router-link to="register">
             Sign Up
           </router-link>
-        </v-btn>
+          </v-btn>
 
-        <v-btn v-if="$store.state.isUserLoggedIn"
+          <v-btn v-if="$store.state.isUserLoggedIn"
           class="red darken-2"
           flat
           dark
           @click="logout">
           Log Out
-        </v-btn>
-      </v-toolbar-items>
+          </v-btn>
+        </v-toolbar-items>
     </v-app-bar>
 </template>
 
