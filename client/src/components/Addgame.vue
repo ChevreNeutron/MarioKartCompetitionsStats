@@ -36,28 +36,6 @@
 
 <script>
 
-import CharactersService from '@/services/CharactersService'
-import Panel from '@/components/Panel'
-
-export default {
-  components: {
-    Panel
-  },
-  data () {
-    return {
-      characters: null
-    }
-  },
-  async mounted () {
-    this.characters = (await CharactersService.getAllCharacters()).data
-  },
-  methods: {
-    removeItem: function (index) {
-      this.characters.splice(index, 1)
-      console.log(index)
-    }
-  }
-}
 
 </script>
 

@@ -4,7 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 import Register from '@/components/Register'
 import Login from '@/components/Login'
 import Characters from '@/components/Characters'
-import Party from '@/components/Party'
+import Addgame from '@/components/Addgame'
 import CreateParty from '@/components/CreateParty'
 
 Vue.use(Router)
@@ -32,9 +32,9 @@ export default new Router({
       component: Characters
     },
     {
-      path: '/party',
-      name: 'party',
-      component: Party
+      path: '/addgame',
+      name: 'Addgame',
+      component: Addgame
     },
     {
       path: '/party/create',

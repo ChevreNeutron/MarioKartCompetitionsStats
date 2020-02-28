@@ -8,10 +8,20 @@
           text
           dark>
           <router-link to="root">
-          Accueil
+          Leaderboard
           </router-link>
           </v-btn>  
 
+             
+
+          <v-btn
+          class="red darken-2"
+          text
+          dark>
+          <router-link to="Addgame">
+          Addgame
+          </router-link>
+          </v-btn>
           <v-btn
           class="red darken-2"
           text
@@ -19,16 +29,7 @@
           <router-link to="characters">
           Characters
           </router-link>
-          </v-btn>      
-
-          <v-btn
-          class="red darken-2"
-          text
-          dark>
-          <router-link to="party">
-          Party
-          </router-link>
-          </v-btn>
+          </v-btn>   
         </v-toolbar-title>
 
         <v-spacer></v-spacer>
