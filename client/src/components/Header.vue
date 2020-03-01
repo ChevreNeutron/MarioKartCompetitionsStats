@@ -97,4 +97,9 @@ export default {
 .home:hover {
   color: black;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}
 </style>
