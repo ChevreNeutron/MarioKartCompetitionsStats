@@ -11,9 +11,13 @@
 
 
     <v-row>
-    <v-flex xs6 offset-xs3>
-        <panel title="Games added" >
-          <div v-for="game in games" :key="game.gamenumber">
+        <template title="games">
+          <v-col class="font-weight-bold"
+                    outlined
+                    tile
+                    v-for="(game, index) in games"
+                    :key="index">
+                    <br> 
             {{game.firstplace}}
             {{game.secondplace}}
             {{game.thirdplace}}
@@ -22,9 +26,9 @@
             {{game.secondchar}}
             {{game.thirdchar}}
             {{game.fourthchar}}
-          </div>
-        </panel>
-    </v-flex>
+          </v-col>
+        </template>
+ 
     </v-row>
 
 
