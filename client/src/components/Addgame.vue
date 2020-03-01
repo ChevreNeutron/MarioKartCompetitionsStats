@@ -1,7 +1,15 @@
 <template>
   <v-layout>
     <v-flex xs6 offset-xs3>
-        <panel>
+        <panel title="Game results">
+          <v-btn
+          class="red darken-2"
+          text
+          dark>
+          <router-link to="Learderboard">
+          Add game
+          </router-link>
+          </v-btn> 
         </panel>
     </v-flex>
   </v-layout>

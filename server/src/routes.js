@@ -1,6 +1,6 @@
 const AuthenticationController = require('./controllers/AuthenticationController')
 const AuthenticationControllerPolicy = require('./policies/AuthenticationControllerPolicy')
-const CharactersController = require('./controllers/CharactersController')
+const GamesController = require('./controllers/GamesController')
 
 module.exports = (app) => {
     app.post('/register',
@@ -10,9 +10,9 @@ module.exports = (app) => {
     app.post('/login',
         AuthenticationController.login)
 
-    app.get('/characters',
-        CharactersController.getAllCharacters)
+    app.get('/games',
+        GamesController.index)
     
-    app.post('/characters',
-        CharactersController.post)
+    app.post('/games',
+        GamesController.post)
 }

@@ -1,5 +1,36 @@
+
+
 <template>
   <v-layout>
+    <v-row>
+    <v-flex xs6 offset-xs3>
+        <panel title="Leaderboard">
+        </panel>
+    </v-flex>
+    </v-row>
+
+
+    <v-row>
+    <v-flex xs6 offset-xs3>
+        <panel title="Games added" >
+          <div v-for="game in games" :key="game.gamenumber">
+            {{game.firstplace}}
+            {{game.secondplace}}
+            {{game.thirdplace}}
+            {{game.fourthplace}}
+            {{game.firstchar}}
+            {{game.secondchar}}
+            {{game.thirdchar}}
+            {{game.fourthchar}}
+          </div>
+        </panel>
+    </v-flex>
+    </v-row>
+
+
+
+
+    <v-row>
     <v-flex title="Characters" xs6 offset-xs3>
         <br>
         <div class="danger-alert" v-html="error" />
@@ -22,10 +53,26 @@
         ></v-img>
       </v-row> 
     </v-flex>
+    </v-row>
   </v-layout>
 </template>
 
 <script>
+import GamesService from '@/services/GamesService'
+import Panel from'@/components/Panel'
+export default {
+  components: {
+    Panel
+  },
+  data(){
+    return{
+      games:null
+    }
+  },
+  async mounted(){
+    this.games = await GamesService.index()
+  }
+}
 </script>
 <style scoped>
 </style>

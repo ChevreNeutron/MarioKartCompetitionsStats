@@ -5,7 +5,7 @@ import Register from '@/components/Register'
 import Login from '@/components/Login'
 import Characters from '@/components/Characters'
 import Addgame from '@/components/Addgame'
-import CreateParty from '@/components/CreateParty'
+
 
 Vue.use(Router)
 
@@ -36,10 +36,5 @@ export default new Router({
       name: 'Addgame',
       component: Addgame
     },
-    {
-      path: '/party/create',
-      name: 'create-party',
-      component: CreateParty
-    }
   ]
 })
