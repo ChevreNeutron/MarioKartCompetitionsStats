@@ -10,9 +10,7 @@
           <router-link to="root">
           Leaderboard
           </router-link>
-          </v-btn>  
-
-             
+          </v-btn>
 
           <v-btn
           class="red darken-2"
@@ -29,7 +27,7 @@
           <router-link to="characters">
           Characters
           </router-link>
-          </v-btn>   
+          </v-btn>
         </v-toolbar-title>
 
         <v-spacer></v-spacer>

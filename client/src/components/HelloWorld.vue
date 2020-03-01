@@ -11,7 +11,7 @@
           <router-link to="Addgame">
           Add game
           </router-link>
-          </v-btn>  
+          </v-btn>
     </v-flex>
   </v-layout>
 </template>
