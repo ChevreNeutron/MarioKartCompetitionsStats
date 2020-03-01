@@ -70,7 +70,7 @@ export default {
     }
   },
   async mounted(){
-    this.games = await GamesService.index()
+    this.games = (await GamesService.index()).data
   }
 }
 </script>
