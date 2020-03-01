@@ -10,8 +10,8 @@ app.use(morgan('combined'))
 app.use(bodyParser.json())
 app.use(cors())
 
-const path = require('path')
-app.use(express.static(path.join(__dirname, 'dist/')))
+//const path = require('path')
+//app.use(express.static(path.join(__dirname, 'dist/')))
 
 require('./routes')(app)
 
