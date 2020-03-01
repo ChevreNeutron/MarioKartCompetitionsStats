@@ -6,7 +6,7 @@ module.exports = {
         password: process.env.DB_PASS || 'mariokartcompetitionstats',
         options: {
             dialect: process.env.DIALECT ||'sqlite',
-            host: process.env.HOST || 'localhost',
+            host: process.env.HOST || '',
             storage: './mariokartcompetitionstats.sqlite'
         }
     },
