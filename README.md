@@ -8,17 +8,25 @@ The main goal is to provide players with a way to use more information than the 
 
 ## Getting Started
 
-To complete.
+Here is the register page :
 
-![Image of Register page](img/register.png)
+![Image of register page](img/register.png)
 
-![Image of Register page](img/leaderboard.png)
+Ici s'affiche le classement des meilleurs joueurs, selon le nombre de 1ère places remportées :
 
-![Image of Register page](img/addgame.png)
+![Image of leaderboard page](img/leaderboard.png)
 
-![Image of Register page](img/games.png)
+Cette page permet d'insérer le nom du joueur, ainsi que le personnage joué, selon l'odrdre d'arrivée.
 
-![Image of Register page](img/characters.png)
+![Image of addgame page](img/addgame.png)
+
+Voici l'affichage des parties en liste :
+
+![Image of games page](img/games.png)
+
+Et enfin le panel de personnages disponibles :
+
+![Image of characters page](img/characters.png)
 
 ## Used tool
 
@@ -27,6 +35,8 @@ This is the list of all used tool used in this course :
 * [Express.js](https://expressjs.com/fr/)
 
 * [Vuetify](https://vuetifyjs.com)
+
+* [Postman](https://www.postman.com)
 
 * [Visual Studio Code](https://code.visualstudio.com)
 
