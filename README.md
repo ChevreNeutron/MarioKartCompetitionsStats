@@ -10,6 +10,16 @@ The main goal is to provide players with a way to use more information than the 
 
 To complete.
 
+![Image of Register page](https://github.com/ChevreNeutron/MarioKartCompetitionsStats/tree/master/img/register.png)
+
+![Image of Register page](https://github.com/ChevreNeutron/MarioKartCompetitionsStats/tree/master/img/leaderboard.png)
+
+![Image of Register page](https://github.com/ChevreNeutron/MarioKartCompetitionsStats/tree/master/img/addgame.png)
+
+![Image of Register page](https://github.com/ChevreNeutron/MarioKartCompetitionsStats/tree/master/img/games.png)
+
+![Image of Register page](https://github.com/ChevreNeutron/MarioKartCompetitionsStats/tree/master/img/characters.png)
+
 ## Used tool
 
 This is the list of all used tool used in this course :
