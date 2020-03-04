@@ -10,15 +10,15 @@ The main goal is to provide players with a way to use more information than the 
 
 To complete.
 
-![Image of Register page](https://github.com/ChevreNeutron/MarioKartCompetitionsStats/tree/master/img/register.png)
+![Image of Register page](img/register.png)
 
-![Image of Register page](https://github.com/ChevreNeutron/MarioKartCompetitionsStats/tree/master/img/leaderboard.png)
+![Image of Register page](img/leaderboard.png)
 
-![Image of Register page](https://github.com/ChevreNeutron/MarioKartCompetitionsStats/tree/master/img/addgame.png)
+![Image of Register page](img/addgame.png)
 
-![Image of Register page](https://github.com/ChevreNeutron/MarioKartCompetitionsStats/tree/master/img/games.png)
+![Image of Register page](img/games.png)
 
-![Image of Register page](https://github.com/ChevreNeutron/MarioKartCompetitionsStats/tree/master/img/characters.png)
+![Image of Register page](img/characters.png)
 
 ## Used tool
 
