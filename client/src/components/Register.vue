@@ -1,15 +1,6 @@
 <template>
   <v-layout>
     <v-flex xs6 offset-xs3>
-      <v-row align="center" justify="center">
-        <v-img
-          src="https://upload.wikimedia.org/wikipedia/fr/9/92/Mario_Kart_8_Deluxe_Logo.png"
-          contain
-          aspect-ratio="1"
-          max-width="500"
-          max-height="300"
-        ></v-img>
-      </v-row>
       <form
         name="tab-tracker-form"
         autocomplete="off">

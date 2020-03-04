@@ -25,7 +25,6 @@
 </template>
 
 <script>
-
 import CharactersService from '@/services/CharactersService'
 import Panel from '@/components/Panel'
 
