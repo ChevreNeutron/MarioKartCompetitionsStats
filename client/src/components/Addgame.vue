@@ -40,12 +40,12 @@
         ></v-text-field>
       </form>
      <v-btn
-          class="red darken-2"
-          text
-          dark
-          @click="create">
-          Add game
-          </v-btn>
+        class="red darken-2"
+        text
+        dark
+        @click="create">
+        Add game
+      </v-btn>
     </v-flex>
   </v-layout>
 </template>
@@ -88,7 +88,7 @@ export default {
     }
   }
 }
-
 </script>
+
 <style scoped>
 </style>

@@ -1,8 +1,5 @@
-
 module.exports = (sequelize, DataTypes) => {
-
     const Game = sequelize.define('Game', {
-
         gamenumber: DataTypes.STRING,
         firstplace: DataTypes.STRING,
         secondplace: DataTypes.STRING,
