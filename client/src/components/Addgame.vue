@@ -8,34 +8,36 @@
           v-model="game.firstplace"
         ></v-text-field>
         <v-text-field
-          label="Second place :"
-          v-model="game.secondplace"
-        ></v-text-field>
-        <v-text-field
-          label="Third place :"
-          v-model="game.thirdplace"
-        ></v-text-field>
-        <v-text-field
-          label="Fourth place :"
-          v-model="game.fourthplace"
+          label="First place :"
+          v-model="game.firstchar"
         ></v-text-field>
 
         <v-text-field
-          label="First place :"
-          v-model="game.firstchar"
+          label="Second place :"
+          v-model="game.secondplace"
         ></v-text-field>
         <v-text-field
           label="Second place :"
           v-model="game.secondchar"
         ></v-text-field>
+
+        <v-text-field
+          label="Third place :"
+          v-model="game.thirdplace"
+        ></v-text-field>
         <v-text-field
           label="Third place :"
           v-model="game.thirdchar"
         ></v-text-field>
+
+        <v-text-field
+          label="Fourth place :"
+          v-model="game.fourthplace"
+        ></v-text-field>
         <v-text-field
           label="Fourth place :"
           v-model="game.fourthchar"
-        ></v-text-field>    
+        ></v-text-field>
       </form>
      <v-btn
           class="red darken-2"
@@ -45,21 +47,20 @@
           Add game
           </v-btn>
     </v-flex>
-  </v-layout> 
+  </v-layout>
 </template>
-
 
 <script>
 
-import Panel from'@/components/Panel'
+import Panel from '@/components/Panel'
 import GamesService from '@/services/GamesService'
 
 export default {
   components: {
-      Panel
+    Panel
   },
-  data() {
-    return{
+  data () {
+    return {
       game: {
         gamenumber: null,
         firstplace: null,
@@ -73,17 +74,17 @@ export default {
       }
     }
   },
-  methods:{
-    async create() {
-      try{
+  methods: {
+    async create () {
+      try {
         const request = await GamesService.post(this.game)
-         this.$router.push({
-          name: 'games'
+        this.$router.push({
+          name: 'root'
         })
-        } 
-        catch (err){
-          console.log(err)
-        }
+        console.log(request)
+      } catch (err) {
+        console.log(err)
+      }
     }
   }
 }

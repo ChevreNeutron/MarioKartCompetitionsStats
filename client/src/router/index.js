@@ -6,7 +6,6 @@ import Login from '@/components/Login'
 import Characters from '@/components/Characters'
 import Addgame from '@/components/Addgame'
 
-
 Vue.use(Router)
 
 export default new Router({
@@ -35,6 +34,6 @@ export default new Router({
       path: '/addgame',
       name: 'Addgame',
       component: Addgame
-    },
+    }
   ]
 })
